@@ -33,7 +33,7 @@ int deQueue(Queue* q) {
 }
 
 int searchQueue(Queue* q) {
-    while (q->rear > q->front >= 1) {
+    while (q->front > q->rear) {
         int a = deQueue(q);
         int b = q->data[q->front];
         if (b - a != 1) {
