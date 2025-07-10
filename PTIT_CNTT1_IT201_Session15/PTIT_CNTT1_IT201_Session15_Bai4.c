@@ -38,7 +38,7 @@ void viewQueue(Queue* q) {
         printf("hang doi trong\n");
         return;
     }
-    for (int i = q->front; i < q->rear; i++) {
+    for (int i = q->front; i <= q->rear; i++) {
         printf("%d ", q->data[i]);
     }
     printf("\n");
